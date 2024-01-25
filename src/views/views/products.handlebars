@@ -1,0 +1,8 @@
+
+<h1>Bienvenido, {{first_name}} {{last_name}}!</h1>
+<h2>Lista de Productos</h2>
+<ul>
+    {{#each products}}
+    <li>{{this.title}} - {{this.description}} - Stock: {{this.stock}} - Precio: {{this.price}}</li>
+    {{/each}}
+</ul>
